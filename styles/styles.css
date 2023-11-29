@@ -69,6 +69,17 @@ aside {
     position: relative;
 }
 
+.aside-top{
+    margin-top: 2em;
+    margin-left: 2em;
+    width: 250px;
+    height: 100px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scale: 200%;
+}
 .lorem-block {
     margin-top: 2em;
     margin-left: 2em;
@@ -285,7 +296,7 @@ of kan je dingen voor en na invoegen aan het element. */
 /* Sammy :P */
 
 /* Footer */
-zfooter {
+footer {
     background-color: var(--grayscale-color-1);
     bottom: 1;
     grid-area: footer;
