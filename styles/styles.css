@@ -95,6 +95,7 @@ aside {
   margin: 0; /* Remove default margin to ensure text is centered properly */
 }
 
+
 .lorem-block:nth-child(2) {
   margin-bottom: 10px;
 }
@@ -102,6 +103,23 @@ aside {
 .lorem-block:nth-child(3) {
   margin-bottom: 0;
 }
+.plus-block {
+    margin-top: 10em; 
+    margin-left: 0em;
+    width: 250px;
+    height: 100px;
+    background-color: var(--background-color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--secundairy-color-1);
+  }
+
+
+
+
+
 
 h1 {
   position: relative;
