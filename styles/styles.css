@@ -67,16 +67,16 @@ aside {
   position: relative;
 }
 
-.aside-top{
-    margin-top: 2em;
-    margin-left: 2em;
-    width: 250px;
-    height: 100px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scale: 200%;
+.aside-top {
+  margin-top: 2em;
+  margin-left: 2em;
+  width: 250px;
+  height: 100px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 200%;
 }
 .lorem-block {
   margin-top: 2em;
@@ -353,11 +353,12 @@ footer a:hover {
 
     display: grid;
     grid-template-areas:
-      "header header"
-      "aside content"
-      "footer footer";
-    grid-template-rows: 0.1fr 2fr 1fr;
-    grid-template-columns: 0.7fr 2fr;
+      "header"
+      "aside"
+      "content"
+      "footer";
+    grid-template-rows: 0.1fr 2fr 2fr 0.1fr;
+    grid-template-columns: 1fr;
     min-height: 100vh;
   }
 }
