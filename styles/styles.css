@@ -1,39 +1,338 @@
 @font-face {
-    font-family: "ProximaNova";
-    src: url("/assets/fonts/ProximaNova-Regular.otf")format("opentype");
+  font-family: "ProximaNova";
+  src: url("/assets/fonts/ProximaNova-Regular.otf") format("opentype");
 }
 
 :root {
+  --primairy-color-1: #f7a100;
+  --primairy-color-2: #ffffff;
+  --primairy-color-3: #5fc5f8;
+  --primairy-color-4: #333333;
 
-    --primairy-color-1: #F7A100;
-    --primairy-color-2: #FFFFFF;
-    --primairy-color-3: #5FC5F8;
-    --primairy-color-4: #333333;
+  --secundairy-color-1: #53241b;
+  --secundairy-color-2: #478bb3;
+  --secundairy-color-3: #f8c463;
+  --secundairy-color-4: #66ba96;
 
-    --secundairy-color-1:#53241B;
-    --secundairy-color-2:#478BB3;
-    --secundairy-color-3:#F8C463;
-    --secundairy-color-4:#66BA96;
+  --grayscale-color-1: #ededed;
+  --grayscale-color-2: #cccccc;
+  --grayscale-color-3: #666666;
+  --grayscale-color-4: #333333;
 
-    --grayscale-color-1:#EDEDED;
-    --grayscale-color-2:#CCCCCC;
-    --grayscale-color-3:#666666;
-    --grayscale-color-4:#333333;
+  --background-color-1: #ffffff;
+  --background-color-2: #333333;
 
-    --background-color-1:#FFFFFF;
-    --background-color-2:#333333;
-
-    --content-radius: .1em;
-    --regular-text: 1em;
-    --fonts:"ProximaNova", sans-serif;   
-
+  --content-radius: 0.1em;
+  --regular-text: 1em;
+  --fonts: "ProximaNova", sans-serif;
 }
 
 * {
-    font-family: var(--fonts);
+  font-family: var(--fonts);
 }
 
 body {
+  max-width: auto;
+  background-color: var(--background-color-1);
+  color: var(--primairy-color-4);
+  margin: 0;
+  padding: 0;
+  font-size: var(--regular-text);
+
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "footer footer";
+  grid-template-rows: 0.1fr 13fr 5fr;
+  grid-template-columns: 0.7fr 2fr;
+  min-height: 100vh;
+}
+.grid-container {
+  display: grid;
+  height: 100%;
+}
+
+header {
+  font-size: 0.8em;
+  grid-area: header;
+  /* Your header styles here */
+}
+/* @naddybs aside section */
+/* Add this CSS to the existing stylesheet */
+aside {
+  grid-area: aside;
+  height: auto;
+  background-color: var(--primairy-color-3);
+  position: relative;
+}
+
+.lorem-block {
+  margin-top: 2em;
+  margin-left: 2em;
+  width: 250px;
+  height: 100px;
+  background-color: var(--background-color-1);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lorem-block p {
+  text-align: center;
+  margin: 0; /* Remove default margin to ensure text is centered properly */
+}
+
+.lorem-block:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.lorem-block:nth-child(3) {
+  margin-bottom: 0;
+}
+
+h1 {
+  position: relative;
+  top: 0;
+  border: under;
+}
+
+.house1 {
+  position: absolute;
+  top: 12em;
+  left: 25em;
+  background-color: var(--grayscale-color-2);
+}
+
+.house2 {
+  position: absolute;
+  top: 12em;
+  left: 35em;
+  background-color: var(--grayscale-color-2);
+}
+
+.house3 {
+  position: absolute;
+  top: 31em;
+  left: 35em;
+  background-color: var(--grayscale-color-2);
+}
+.house4 {
+  position: absolute;
+  top: 31em;
+  left: 25em;
+  background-color: var(--grayscale-color-2);
+}
+/* Your main content styles here */
+
+h2 {
+  font-weight: 600;
+  position: relative;
+  left: 4em;
+}
+
+/* .btn-list {
+      background-color: var(--secundairy-color-1);
+      width: 42px;
+      height: 40px;
+      box-shadow: -3px 6px 4px #222;
+  } */
+form {
+  position: relative;
+  left: 2em;
+}
+form input {
+  width: 230px;
+  height: 36px;
+  border: none;
+  padding: 0 5px;
+  box-shadow: -3px 6px 4px #222;
+}
+
+form button {
+  width: 42px;
+  height: 40px;
+  background-color: var(--secundairy-color-1);
+  box-shadow: -3px 6px 4px #222;
+  cursor: pointer;
+}
+.container {
+  margin-top: 20px;
+}
+.container ul {
+  list-style: none;
+  width: 500px;
+}
+.container ul li {
+  width: 100%;
+  background-color: var(--background-color-1);
+  height: 40px;
+  line-height: 40px;
+  padding: 0 5px;
+  position: relative;
+  right: 1em;
+  cursor: pointer;
+  display: block;
+  margin: 5px 0;
+  box-shadow: -3px 6px 4px #222;
+  transition: 0.5s linear;
+}
+.container ul li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  text-align: center;
+  background-color: #c62d2d;
+}
+/* @naddybs aside section */
+main {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+  /* Your footer styles here */
+}
+
+/* Heading door @samarafelladina */
+header,
+main,
+footer {
+  padding: 0.8em;
+  display: flex;
+}
+
+button {
+  appearance: auto;
+  border-style: none;
+}
+
+header li {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  background-color: var(--secundairy-color-1);
+  align-items: center;
+  gap: 1.3em;
+}
+
+.logo-funda {
+  width: auto;
+  height: 2em;
+  cursor: pointer;
+}
+
+.hamburger {
+  flex-direction: column-reverse;
+}
+
+.nav-list-right {
+  position: absolute;
+  right: 2em;
+  top: 0.8em;
+  padding-inline-end: 2em;
+}
+
+.nav-list-right,
+.nav-list-left {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 2em;
+  gap: 1.3em;
+}
+
+.hamburger,
+.nav-list-right,
+.nav-list-left {
+  height: auto;
+  width: auto;
+  background: none;
+  color: var(--primairy-color-2);
+
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+}
+
+.hamburger img,
+.nav-list-right img {
+  height: 2em;
+  width: auto;
+  align-self: center;
+}
+
+.header a:link,
+.header a:visited,
+.header a:active {
+  color: var(--primairy-color-2);
+  text-decoration: none;
+}
+
+/* Wat is een Pseudo (::) element? Dit is een element wat een
+  deel van een element gebruikt, bijvoorbeeld de eerste letter, 
+  of kan je dingen voor en na invoegen aan het element. */
+
+/* Heading door @samarafelladina */
+
+/* Sammy :P */
+
+/* Footer */
+footer {
+  background-color: var(--grayscale-color-1);
+  bottom: 1;
+  grid-area: footer;
+  justify-content: center;
+}
+
+footer li,
+footer ul {
+  list-style: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  line-height: 2em;
+}
+
+.shortcut-footer {
+  min-width: 100px;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.shortcut-footer div {
+  float: left;
+  width: auto;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: 1em;
+}
+
+.shortcut-footer h3 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-size: 1em;
+}
+
+footer a:link,
+footer a:visited {
+  color: var(--primairy-color-3);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--primairy-color-4);
+  animation-duration: 1s;
+}
+
+@media screen and (max-width: 711px) {
+  body {
     max-width: auto;
     background-color: var(--background-color-1);
     color: var(--primairy-color-4);
@@ -43,297 +342,11 @@ body {
 
     display: grid;
     grid-template-areas:
-        "header header"
-        "aside content"
-        "footer footer"; 
-    grid-template-rows: 0.1fr 13fr 5fr;
+      "header header"
+      "aside content"
+      "footer footer";
+    grid-template-rows: 0.1fr 2fr 1fr;
     grid-template-columns: 0.7fr 2fr;
-    min-height: 100vh;  
-}
-.grid-container {
-    display: grid;
-    height: 100%;
-}
-
-header {
-    font-size: .8em;
-    grid-area:header;
-    /* Your header styles here */
-} 
-/* @naddybs aside section */
-/* Add this CSS to the existing stylesheet */
-aside {
-    grid-area: aside;
-    height: auto;
-    background-color: var(--primairy-color-3);
-    position: relative;
-}
-
-.lorem-block {
-    margin-top: 2em;
-    margin-left: 2em;
-    width: 250px;
-    height: 100px;
-    background-color: var(--background-color-1);
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.lorem-block p {
-    text-align: center;
-    margin: 0; /* Remove default margin to ensure text is centered properly */
-}
-
-.lorem-block:nth-child(2) {
-    margin-bottom: 10px;
-}
-
-.lorem-block:nth-child(3) {
-    margin-bottom: 0;
-}
-
-
-h1 {
-    position: relative;
-    top:0;
-    border: under;
-}
-
-.house1 {
-    position: absolute;
-    top: 12em;
-    left: 25em;
-    background-color: var(--grayscale-color-2);
-    }
-
-.house2 {
-    position: absolute;
-    top: 12em;
-    left: 35em;
-    background-color: var(--grayscale-color-2);
-}
-
-.house3 {
-    position: absolute;
-    top: 31em;
-    left: 35em;
-    background-color: var(--grayscale-color-2); 
-}
-.house4 {
-    position: absolute;
-    top: 31em;
-    left: 25em;
-    background-color: var(--grayscale-color-2); 
-}
-    /* Your main content styles here */
-
-h2 {
-    font-weight: 600;
-    position: relative;
-    left: 4em;
-}
-
-/* .btn-list {
-    background-color: var(--secundairy-color-1);
-    width: 42px;
-    height: 40px;
-    box-shadow: -3px 6px 4px #222;
-} */
-form {
-    position: relative;
-    left: 2em;
-}
-form input{
-    width: 230px;
-    height: 36px;
-    border: none;
-    padding: 0 5px;
-    box-shadow: -3px 6px 4px #222;
-}
-
-form button{
-    width: 42px;
-    height: 40px;
-    background-color: var(--secundairy-color-1);
-    box-shadow: -3px 6px 4px #222; 
-    cursor: pointer;
-}
-.container {
-    margin-top: 20px;
-}
-.container ul{
-    list-style: none;
-    width: 500px;
-}
-.container ul li{
-    width: 100%;
-    background-color: var(--background-color-1);
-    height: 40px;
-    line-height: 40px;
-    padding: 0 5px;
-    position: relative;
-    right: 1em;
-    cursor: pointer;
-    display: block;
-    margin: 5px 0;
-    box-shadow: -3px 6px 4px #222;
-    transition: 0.5s linear;
-}
-.container ul li span{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    text-align: center;
-    background-color: #c62d2d;
-}
-/* @naddybs aside section */
-main {
-    grid-area: content;
-}
-
- footer {
-    grid-area: footer;
-    /* Your footer styles here */
-}
-
-/* Heading door @samarafelladina */
-header, main, footer {
-    padding: .8em;
-    display: flex;
-}
-
-button {
-    appearance: auto;
-    border-style: none;
-}
-
-header li {  
-    list-style: none;
-}
-
-.header {
-    display: flex;
-    background-color: var(--secundairy-color-1);
-    align-items: center;
-    gap: 1.3em;
-
-}
-
-.logo-funda {
-    width: auto;
-    height: 2em;
-    cursor: pointer;
-}
-
-.hamburger{
-    flex-direction: column-reverse;
-}
-
-.nav-list-right{
-    position: absolute;
-    right: 2em;
-    top :.8em;
-    padding-inline-end: 2em;
-}
-
-.nav-list-right, .nav-list-left {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 2em;
-    gap: 1.3em
-}
-
-.hamburger, .nav-list-right, .nav-list-left {
-    height: auto;
-    width: auto;
-    background: none;
-    color: var(--primairy-color-2);  
-
-    text-align: center;
-    cursor: pointer;
-    font-size: .8em;
-    display: flex;
-    justify-content: center;  
-}
-
-.hamburger img, .nav-list-right img {
-    height: 2em;
-    width: auto;
-    align-self: center;
-}
-
-.header a:link, .header a:visited, .header a:active{
-    color: var(--primairy-color-2);
-    text-decoration: none;
-}
-
-/* Wat is een Pseudo (::) element? Dit is een element wat een
-deel van een element gebruikt, bijvoorbeeld de eerste letter, 
-of kan je dingen voor en na invoegen aan het element. */
-
-
-/* Heading door @samarafelladina */
-
-
-
-
-
-/* Sammy :P */
-
-/* Footer */
-zfooter {
-    background-color: var(--grayscale-color-1);
-    bottom: 1;
-    grid-area: footer;
-    justify-content: center;
-
-
-}
-
-footer li, footer ul {
-    list-style: none;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    padding-inline-start: 0;
-    line-height: 2em;
-}
-
-.shortcut-footer {
-    min-width: 100px;
-    padding-left: 3em;
-    padding-right: 3em;
-
-}
-
-.shortcut-footer div{
-    float: left;
-    width: auto;
-    height: auto;
-    left:0;
-    right:0;
-    margin: 1em;
-;
-
-}
-
-.shortcut-footer h3 {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    font-size: 1em;
-}
-
-
-
-footer a:link, footer a:visited {
-    color: var(--primairy-color-3);
-    text-decoration: none;
-}
-
-footer a:hover {
-    color: var(--primairy-color-4);
-    animation-duration: 1s;
+    min-height: 100vh;
+  }
 }
