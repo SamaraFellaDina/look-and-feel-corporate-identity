@@ -345,7 +345,7 @@ footer ul {
 
 footer a:link,
 footer a:visited {
-  color: var(--primairy-color-3);
+  color: var(--secundairy-color-2);
   text-decoration: none;
 }
 
