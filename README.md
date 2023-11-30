@@ -16,6 +16,8 @@ Tijdens dit project hebben wij een website gebouwd voor het bedrijf Funda. Daar 
 * Als gebruiker wil jij je eigen waardering geven aan een huis om zo meer controle te hebben over de kwaliteit en waarde van het huis die persoonlijk meer waardering hebben.
 * Je wilt als gebruiker eigen lijsten van huizen kunnen creëren en het kunnen delen met anderen om samen (asynchroon) huizen te kiezen die in de smaak vallen.
 
+[](https://i.imgur.com/ryiUdEN.png)
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
