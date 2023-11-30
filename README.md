@@ -16,10 +16,15 @@ Tijdens dit project hebben wij een website gebouwd voor het bedrijf Funda. Daar 
 * Als gebruiker wil jij je eigen waardering geven aan een huis om zo meer controle te hebben over de kwaliteit en waarde van het huis die persoonlijk meer waardering hebben.
 * Je wilt als gebruiker eigen lijsten van huizen kunnen creëren en het kunnen delen met anderen om samen (asynchroon) huizen te kiezen die in de smaak vallen.
 
-[](https://i.imgur.com/ryiUdEN.png)
+![alt text](https://i.imgur.com/ryiUdEN.png)
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+### HTML
+### CSS
+Bij de css hebben we onder andere gebruik gemaakt van de custom properties om zo de huisstijl op een gemakkelijke manier te kunnen implenmenteren. Wij hebben de huisstijl goed geanalyseerd in [The living styleguide](https://naddybs.github.io/look-and-feel-living-styleguide/). 
+
+Ook is er gekeken naar de DRY methode waar er gebruik wordt gemaakt van shorthand en selector grouping. Voor dit project hebben we tot slot ook code conventies gemaakt om zo een duidelijke structuur te creeeren in onze code
 
 ## Bronnen
 
